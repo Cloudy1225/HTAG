@@ -1,0 +1,222 @@
+global:
+  hid_dims: [128, 128]
+  activation: ReLU
+  skip_connection: True
+  learning_rate: 0.01
+  weight_decay: 0.0
+  dropout: 0.5
+  norm_type: none
+  fan_out: 10
+
+TMDB:
+  MLP:
+    dropout: 0.2
+    norm_type: none
+  GCN:
+    dropout: 0.5
+    norm_type: layer
+    activation: ReLU
+  SAGE:
+    dropout: 0.5
+    norm_type: none
+    activation: ReLU
+  GAT:
+    dropout: 0.5
+    attn_drop: 0.5
+    num_heads: 4
+    weight_decay: 0.0001
+    norm_type: none
+    activation: ReLU
+  RSAGE:
+    dropout: 0.5
+    norm_type: none
+    activation: ReLU
+  RGCN:
+    dropout: 0.5
+    norm_type: none
+    activation: ReLU
+  RGAT:
+    dropout: 0.5
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: none
+    activation: ReLU
+  ieHGCN:
+    dropout: 0.5
+    norm_type: none
+    activation: ReLU
+
+CroVal:
+  MLP:
+    dropout: 0.5
+    norm_type: batch
+    activation: ReLU
+  GCN:
+    dropout: 0.5
+    activation: ReLU
+    norm_type: layer
+  SAGE:
+    dropout: 0.8
+    activation: ReLU
+    norm_type: batch
+  GAT:
+    dropout: 0.5
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+  RGCN:
+    dropout: 0.5
+    norm_type: layer
+    activation: ReLU
+  RSAGE:
+    dropout: 0.5
+    norm_type: layer
+    activation: ReLU
+  RGAT:
+    dropout: 0.5
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+    activation: ReLU
+  ieHGCN:
+    dropout: 0.7
+    norm_type: layer
+    activation: ReLU
+
+ArXiv:
+  MLP:
+    dropout: 0.2
+    norm_type: batch
+    activation: ELU
+  GCN:
+    dropout: 0.5
+    norm_type: layer
+  SAGE:
+    dropout: 0.5
+    norm_type: layer
+  GAT:
+    dropout: 0.5
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+  RGCN:
+    dropout: 0.5
+    norm_type: layer
+  RSAGE:
+    dropout: 0.5
+    norm_type: layer
+  RGAT:
+    dropout: 0.5
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+  ieHGCN:
+    dropout: 0.5
+    norm_type: batch
+
+Book:
+  MLP:
+    dropout: 0.0
+    norm_type: batch
+    activation: ELU
+  GCN:
+    dropout: 0.5
+    norm_type: layer
+  SAGE:
+    dropout: 0.5
+    norm_type: layer
+  GAT:
+    dropout: 0.5
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+  RGCN:
+    skip_connection: True
+    dropout: 0.2
+    norm_type: layer
+    activation: ReLU
+  RSAGE:
+    skip_connection: True
+    dropout: 0.2
+    norm_type: layer
+    activation: ReLU
+  RGAT:
+    dropout: 0.2
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+  ieHGCN:
+    dropout: 0.2
+    norm_type: layer
+
+DBLP:
+  MLP:
+    dropout: 0.2
+    norm_type: batch
+    activation: ReLU
+  GCN:
+    dropout: 0.2
+    norm_type: layer
+  SAGE:
+    dropout: 0.2
+    norm_type: layer
+  GAT:
+    dropout: 0.2
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+  RGCN:
+    skip_connection: True
+    dropout: 0.2
+    norm_type: layer
+    activation: ReLU
+  RSAGE:
+    skip_connection: True
+    dropout: 0.2
+    norm_type: layer
+    activation: ReLU
+  RGAT:
+    dropout: 0.2
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+  ieHGCN:
+    dropout: 0.2
+    norm_type: layer
+    activation: ReLU
+
+Patent:
+  MLP:
+    dropout: 0.0
+    norm_type: none
+    activation: ELU
+  GCN:
+    dropout: 0.0
+    norm_type: layer
+  SAGE:
+    dropout: 0.0
+    norm_type: layer
+  GAT:
+    dropout: 0.0
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: layer
+  RGCN:
+    skip_connection: True
+    dropout: 0.0
+    norm_type: none
+    activation: ReLU
+  RSAGE:
+    skip_connection: True
+    dropout: 0.0
+    norm_type: none
+    activation: ReLU
+  RGAT:
+    dropout: 0.0
+    attn_drop: 0.5
+    num_heads: 4
+    norm_type: none
+  ieHGCN:
+    dropout: 0.0
+    norm_type: none
+    activation: ReLU
