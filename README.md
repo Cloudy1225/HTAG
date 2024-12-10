@@ -64,9 +64,9 @@ The dataset includes heterogeneous graph edges, raw text, PLM-based features, la
 |                                                              | Movie: 7,505        | Movie-Actor: 86,517        |           | Valid: 711       |
 |                                                              | Actor: 13,016       | Movie-Director: 18,341     |           | Test: 1,096      |
 |                                                              | Director: 3,891     |                            |           |                  |
-| [CroVal](https://huggingface.co/datasets/Cloudy1225/HTAG/blob/main/croval/README.md) | **44386**           | **164,981**                | 6         | Train: 9,699     |
-|                                                              | Question: 34153     | Question-Question: 46,269  |           | Valid: 9,889     |
-|                                                              | User: 8898          | Question-User: 34,153      |           | Test: 14,565     |
+| [CroVal](https://huggingface.co/datasets/Cloudy1225/HTAG/blob/main/croval/README.md) | **44386**           | **164,981**                | 6         | Train: 980       |
+|                                                              | Question: 34153     | Question-Question: 46,269  |           | Valid: 1,242     |
+|                                                              | User: 8898          | Question-User: 34,153      |           | Test: 31,931     |
 |                                                              | Tag: 1335           | Question-Tag: 84,559       |           |                  |
 | [ArXiv](https://huggingface.co/datasets/Cloudy1225/HTAG/blob/main/arxiv/README.md) | **231,111**         | **2,075,692**              | 40        | Train: 47,084    |
 |                                                              | Paper: 81,634       | Paper-Paper: 1,019,624     |           | Valid: 18,170    |
